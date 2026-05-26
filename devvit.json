@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "sentinel-hack",
+  "blocks": {
+    "entry": "src/app/index.tsx"
+  },
+  "permissions": {
+    "http": {
+      "enable": true,
+      "domains": [
+        "api.openai.com",
+        "generativelanguage.googleapis.com"
+      ]
+    }
+  },
+  "dev": {
+    "subreddit": "sentinel_hack_dev"
+  }
+}

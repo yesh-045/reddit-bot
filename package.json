@@ -1,0 +1,22 @@
+{
+  "name": "sentinel-hack",
+  "version": "0.0.0",
+  "description": "AI-Powered Coordinated Abuse Detection for Reddit Moderators",
+  "type": "module",
+  "main": "src/app/index.tsx",
+  "scripts": {
+    "dev": "devvit playtest",
+    "build": "tsc",
+    "test": "node --experimental-vm-modules src/services/detector/signals.test.js",
+    "upload": "devvit upload"
+  },
+  "dependencies": {
+    "@devvit/public-api": "0.12.24"
+  },
+  "devDependencies": {
+    "devvit": "0.12.24",
+    "typescript": "5.3.3"
+  },
+  "private": true,
+  "license": "BSD-3-Clause"
+}
